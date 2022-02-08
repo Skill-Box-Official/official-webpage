@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SKILLBOX</title>
+    <script src="https://kit.fontawesome.com/bf008d4c9e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+       <div class="navbar">
+        <nav>  
+            <ul>
+              <li>
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li>
+                <a class="nav-link" href="#">skills</a>
+                <div class="sub-menu-1">
+                    <ul>
+                        <li><a href="#">showcase1</a></li>
+                        <li><a href="#">showcase2</a></li>
+                        <li><a href="#">showcase3</a></li>
+                    </ul>
+                </div>
+              </li>
+              <li>
+                <a class="nav-link disabled">learn</a>
+                <div class="sub-menu-2">
+                    <ul>
+                        <li><a href="#">Reading</a></li>
+                        <li><a href="#">Learning</a></li>
+                        <li><a href="#">programming</a></li>
+                        <li><a href="#">interview</a></li>
+                    </ul>
+                </div>
+              </li>
+              <li>
+                <form action="ii.html" method="post">
+                <a class="nav-link " href="ii.html">test</a>
+                <div class="sub-menu-1">
+                    <ul>
+                        <li><a href="#">Reading</a></li>
+                        <li><a href="#">learning</a></li>
+                        <li><a href="#">Psychology</a></li>
+                    </ul>
+                </div>
+              </li>
+              <li>
+                <a class="nav-link disabled">Connect</a>
+              </li>
+            </ul>
+        </nav>
+        </div>  
+        
+    <div class="form"></div>    
+ <script src="navbar.js"></script>
+ <section id="hero">
+    <div class=" hero container">
+        <h1>Welcome to skillbox</h1>
+        <a href="#" type ="button" class="cta">portfolio</a>
+    </div>
+ </section>
+ <section id="skills">
+    <div class=" skills container">
+        <div class="skill-top">
+            <h1 class="skill-title">skill</h1>
+            <div class="skill-bottom">
+            </div>
+        </div>
+    </div>
+  </section>
+  <section id="Learn">
+    <div class=" learn container">
+        <div class="learn-top">
+            <h1 class="learn-title">Learn</h1>
+            <div class="learn-bottom">
+            </div>
+        </div>
+    </div>
+  </section>
+ <section id="test">
+   <div class=" test container">
+       <div class="test-top">
+           <h1 class="test-title">test</h1>
+           <div class="test-bottom">
+           </div>
+       </div>
+   </div>
+ </section>
+ <section id="connect">
+     <div class=" connect container">
+         <div class="connect-top">
+            <h1 class="connect-title">connect</h1> 
+             <div class="connect-bottom">
+               <ul>
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-discord"></i>
+                <i class="fab fa-youtube"></i>
+               </ul>
+             </div>
+         </div>
+     </div>
+ </section>
+ <style>
+     *{
+         padding: 0;
+         margin: 0;
+         box-sizing: border-box;
+         font-family: sans-serif;
+     }
+     html{
+         font-size: 10px;
+         font-family: sans-serif;
+     }
+     a{
+         text-decoration: none;
+     }
+     .container{
+         min-height: 100vh;
+         width: 100%;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+     }
+     .hero{
+         background-size: cover;
+         background-position:top center ;
+         position: relative ;
+     }
+     .hero ::after{
+         content: '';
+         position: absolute;
+         left: 0;
+         top: 0;
+         height: 100%;
+         width: 100%;
+         background-color: whitesmoke;
+         opacity: 7;
+         z-index: -1;
+     }
+     .hero h1{
+         display: block;
+         width: fit-content;
+         font-size: 4rem;
+         position: relative;
+         color: black;
+     }
+     .hero cta{
+         display: inline-block;
+         padding: 10px 34px;
+         color: crimson;
+         background-color: transparent;
+         border: 2px solid;
+         font-size: 2rem;
+         text-transform: uppercase;
+         letter-spacing: 1rem;
+         margin-top: 30px;
+         transition: 0.3s;
+         transition-property: background-color,color;
+     }
+     .hero cta :hover{
+       color: white;
+       background-color: crimson;
+      
+     }
+     .a{
+       text-decoration:none ;
+   }
+   .skills-container{
+    width: 100vh;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+   }
+   .skills{
+       background-size: cover;
+       background-position:top-center;
+       position: relative;
+   }
+   .skills ::after{
+       content: '';
+       position: absolute;
+       left: 0;
+       top: 0;
+       height: 100%;
+       width: 100%;
+       color: whitesmoke;
+       opacity: 7;
+       z-index: -1;
+   }
+   .skills h1{
+         display: block;
+         width: fit-content;
+         font-size: 4rem;
+         position: relative;
+         color: black;
+     }
+     .skills cta{
+         display: inline-block;
+         padding: 10px 34px;
+         color: crimson;
+         background-color: transparent;
+         border: 2px solid;
+         font-size: 2rem;
+         text-transform: uppercase;
+         letter-spacing: 1rem;
+         margin-top: 30px;
+         transition: 0.3s;
+         transition-property: background-color,color;
+     }
+     .skills cta :hover{
+       color: white;
+       background-color: crimson;
+      
+     }
+   .a{
+       text-decoration:none ;
+   }
+   .learn-container{
+    width: 100vh;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+   }
+   .learn{
+       background-size: cover;
+       background-position:top-center;
+       position: relative;
+   }
+   .learn ::after{
+       content: '';
+       position: absolute;
+       left: 0;
+       top: 0;
+       height: 100%;
+       width: 100%;
+       color: whitesmoke;
+       opacity: 7;
+       z-index: -1;
+   }
+   .learn h1{
+         display: block;
+         width: fit-content;
+         font-size: 4rem;
+         position: relative;
+         color: black;
+     }
+     .learn cta{
+         display: inline-block;
+         padding: 10px 34px;
+         color: crimson;
+         background-color: transparent;
+         border: 2px solid;
+         font-size: 2rem;
+         text-transform: uppercase;
+         letter-spacing: 1rem;
+         margin-top: 30px;
+         transition: 0.3s;
+         transition-property: background-color,color;
+     }
+     .learn cta :hover{
+       color: white;
+       background-color: crimson;
+      
+     }
+   .a{
+       text-decoration:none ;
+   }
+   .test-container{
+    width: 100vh;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+   }
+   .test{
+       background-size: cover;
+       background-position:top-center;
+       position: relative;
+   }
+   .test ::after{
+       content: '';
+       position: absolute;
+       left: 0;
+       top: 0;
+       height: 100%;
+       width: 100%;
+       color: whitesmoke;
+       opacity: 7;
+       z-index: -1;
+   }
+   .test h1{
+         display: block;
+         width: fit-content;
+         font-size: 4rem;
+         position: relative;
+         color: black;
+     }
+     .test cta{
+         display: inline-block;
+         padding: 10px 34px;
+         color: crimson;
+         background-color: transparent;
+         border: 2px solid;
+         font-size: 2rem;
+         text-transform: uppercase;
+         letter-spacing: 1rem;
+         margin-top: 30px;
+         transition: 0.3s;
+         transition-property: background-color,color;
+     }
+     .test cta :hover{
+       color: white;
+       background-color: crimson;
+      
+     }
+   .a{
+       text-decoration:none ;
+   }
+   .connect-container{
+    width: 100vh;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+   }
+   .connect{
+       background-size: cover;
+       background-position:top-center;
+       position: relative;
+   }
+   .connect ::after{
+       content: '';
+       position: absolute;
+       left: 0;
+       top: 0;
+       height: 100%;
+       width: 100%;
+       color: whitesmoke;
+       opacity: 7;
+       z-index: -1;
+   }
+ </style> 
+</body>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        font-family: sans-serif;
+    }
+    .body{    background: url(images);
+        background-position: center;
+        background-size: cover;
+        box-sizing: border-box;
+        font-family: sans-serif;
+    }
+
+    .navbar container{
+         background-position: fixed;
+         background-size: cover;
+         background-color: whitesmoke;
+         position: fixed;
+     }
+     .navbar{
+           background-color: black;
+           align-items: center;
+           display: flex;
+           align-items: center;
+     }
+     .navbar ul li{
+         display: inline-block;
+         justify-content: space-between;
+         padding: 20px;
+         position: relative;
+     }
+     .navbar ul li a{
+        text-decoration:none;
+        color: white;
+        text-transform: uppercase;
+     }
+     .navbar ul li ::after{
+         content: '';
+         height: 2px;
+         width: 0%;
+         background: white;
+         position: absolute;
+         left: 0;
+         bottom: 16px;
+         transition: 0.5s;
+     }
+     .navbar ul li :hover::after{
+         width: 100%;
+     }
+     .sub-menu-1{
+         display: none;
+     }
+      .sub-menu-1 :hover{
+         display: inline-block;
+         position: absolute;
+         background: black;
+         margin-top: auto;
+         margin-left: auto;
+     }
+     .navbar ul li :hover .sub-menu-1 ul{
+         display: block;
+         margin: 10px;
+     }
+     .navbar ul li :hover .sub-menu-1 ul li{
+         width: 150px;
+         padding: 10px;
+         border-bottom: 1px wheat;
+         border-radius: 0;
+         text-align: left;
+     }
+     .navbar ul li :hover .sub-menu-1 ul li :last-child{
+         border-bottom: none;
+     }
+     .navbar ul li :hover .sub-menu-1 ul li a:hover{
+         color: white;
+     }
+     .sub-menu-1{
+         display: none;
+     }
+     .menu-bar ul li :hover.sub-menu-1{
+         display: block;
+         position: absolute;
+         margin: 15px;
+         padding: 10px;
+     }
+     .menu-bar ul li :hover.sub-menu-1 ul{
+         display: block;
+         margin: 10px;
+     }
+     .sub-menu-2{
+         display: none;
+     }
+     .menu-bar ul li :hover.sub-menu-2{
+         display: block;
+         position: absolute;
+         margin: 15px;
+         padding: 10px;
+     }
+     .menu-bar ul li :hover.sub-menu-2 ul{
+         display: block;
+         margin: 10px;
+     }
+</style>
+</html>
